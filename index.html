@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: aquamarine;">
+<header class="navbar">
+        <div class="logo" onclick="mostrarSeccion('inicio')" style="font-family: 'Courier New', Courier, monospace; font-size: 35px; font-weight: bold ; letter-spacing: 1px ; padding:15px;">ITSEC SUCRE</div>
+        <nav style="background-color: rgb(198, 127, 226);"">
+            <ul class="nav-links">
+                <li><a href="#" onclick="mostrarSeccion('datos')">Datos Personales</a></li>
+                <li><a href="#" onclick="mostrarSeccion('stand1')">Stand 1</a></li>
+                <li><a href="#" onclick="mostrarSeccion('stand2')">Stand 2</a></li>
+                <li><a href="#" onclick="mostrarSeccion('stand3')">Stand 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <a href="#" class="sidebar-btn" onclick="mostrarSeccion('inicio')">🏠 Inicio</a>
+        </aside>
+        <main class="content-box">
+            <section id="inicio" class="tab-content active">
+                <center>
+                <div class="bienvenida-original">
+                    <h1> INSTITUTO TECNICO SUPERIOR DE EDUCACION COMERCIAL<br>“ FEXPO ITSEC SUCRE”</h1>
+                    <h2 class="subtitulo-amarillo">¡Bienvenidos gestión 2026!</h2>
+                    <img src="c:\Users\LENOVO\Pictures\escudo1.webp" alt="ITSEC SUCRE " width="300" height="350">
+                </div>
+                </center>
+            </section>
+            <section id="datos" class="tab-content">
+                <div class="perfil-container">
+                    <img src="c:\Users\LENOVO\Pictures\1791612980613.jpg">
+                    <div class="datos-texto">
+                        <h2>Datos Personales</h2>
+                        <hr>
+                        <p><strong>Nombre:</strong> Luis Wilfredo Moyo Colque</p>
+                        <p><strong>Carrera:</strong> Sistemas Informáticos</p>
+                        <p><strong>Docente / Ingeniero:</strong> Hugo Alfredo Taborga Paz</p>
+                        <p><strong>Fecha:</strong> 7 de octubre de 2026</p>
+                    </div>
+                </div>
+            </section>
+            <section id="stand1" class="tab-content">
+                <div class="stand-header">
+                    <h2>ROSQUITAS DELICIOSAS</h2>
+                </div>
+                <div class="stand-info">
+                    <h3>¿Qué venden?</h3>
+                    <p>En este emprendimiento se trajo roquitas glaseadas mini y deliciosas , se espera hacerce conocer mas el puesto</p>
+                </div>
+                <h3>Evidencia Fotográfica</h3>
+                <div class="galeria-imagenes">
+                    <div class="foto-box"><img src="c:\Users\LENOVO\Pictures\1791902606172.jpg"><p>Productos</p></div>
+                </div>
+            </section>
+            <section id="stand2" class="tab-content">
+                <div class="stand-header">
+                    <h2>kanka pipocas fritas</h2>
+                </div>
+                <div class="stand-info">
+                    <h3>¿Qué venden?</h3>
+                    <p>Papitas deliociosas y esquisitas para el consumo , venga a tragar</p>
+                </div>
+                <h3>Evidencia Fotográfica</h3>
+                <div class="galeria-imagenes">
+                    <div class="foto-box"><img src="c:\Users\LENOVO\Pictures\1791902579111.png"><p>Estructura</p></div>
+                    <div class="foto-box"><img src="c:\Users\LENOVO\Downloads\IMG-20261007-WA0008 - copia.jpg"><p>Productos</p></div>
+                </div>
+            </section>
+            <section id="stand3" class="tab-content">
+                <div class="stand-header">
+                    <h2>QUESILLO</h2>
+                </div>
+                <div class="stand-info">
+                    <h3>¿Qué venden?</h3>
+                    <p>Quesillo delicioso para el consumo , venga a probar nuestros productos</p>
+                </div>
+                <h3>Evidencia Fotográfica</h3>
+                <div class="galeria-imagenes">
+                    <div class="foto-box"><img src="c:\Users\LENOVO\Pictures\1791902507633 (1).png"><p>producto</p></div>
+                    <div class="foto-box"><img src="c:\Users\LENOVO\Pictures\quesillo.png"><p>logo</p></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <>
+    <script>
+        function mostrarSeccion(idSeccion) {
+            const secciones = document.querySelectorAll('.tab-content');
+            secciones.forEach(sec => sec.classList.remove('active'));
+            document.getElementById(idSeccion).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
+
